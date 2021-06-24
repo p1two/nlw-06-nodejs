@@ -1,6 +1,8 @@
 DEPENDÊNCIAS
 
+@types/bcryptjs
 @types/express
+@types/uuid
 -> algumas bibliotecas tem um biblioteca separada com os tipos disponíves, que
 devem ser adicionadas como dependência de desenvolvimento
 
@@ -72,3 +74,4 @@ juntar
 
 Async/await
 -> Funções que irão precisar chamar outra função com await necessitam ser declaradas como async
+-> Funções que retornam uma Promise precisam ser chamadas com await

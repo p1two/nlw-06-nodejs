@@ -18,8 +18,10 @@
 
 - Cadastro de Elogio
 
-  [ ] Não é permitido um usuário cadastrar um elogio para sí
+  [ X ] Não é permitido um usuário cadastrar um elogio para sí
 
-  [ ] Não é permitido cadastrar elogios para usuários inválidos
+  [ X ] Não é permitido cadastrar elogios para usuários inválidos
+
+  [ X ] Não é permitido cadastrar elogios com tags inválidas
 
   [ ] O usuário precisa estar autenticado na aplicação
