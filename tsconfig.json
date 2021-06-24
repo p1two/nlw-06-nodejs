@@ -82,6 +82,7 @@
       "@middlewares/*": ["src/middlewares/*"],
       "@repositories/*": ["src/repositories/*"],
       "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
       "@configs/*": ["src/configs/*"]
     }
   }

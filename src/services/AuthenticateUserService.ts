@@ -1,4 +1,5 @@
 import { UsersRepositories } from "@repositories/UsersRepositories";
+import { BadRequest } from "@utils/errors";
 import { compare } from "bcryptjs";
 import { sign } from "jsonwebtoken";
 import { getCustomRepository } from "typeorm";
@@ -16,13 +17,13 @@ class AuthenticateUserService {
     });
 
     if (!user) {
-      throw new Error("Email/Password incorrect");
+      throw new BadRequest("Email/Password incorrect");
     }
 
     const passwordMatch = await compare(password, user.password);
 
     if (!passwordMatch) {
-      throw new Error("Email/Password incorrect");
+      throw new BadRequest("Email/Password incorrect");
     }
 
     const token = sign(

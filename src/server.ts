@@ -3,6 +3,7 @@ import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import { router } from "./routes";
 import "./database";
+import { ApplicationError } from "@utils/errors";
 
 const app = express();
 
@@ -12,14 +13,17 @@ app.use(router);
 
 app.use(
   (err: Error, request: Request, response: Response, next: NextFunction) => {
-    if (err instanceof Error) {
-      return response.status(400).json({
-        error: err.message,
+    if (err instanceof ApplicationError) {
+      return response.status(err.statusCode).json({
+        statusCode: err.statusCode,
+        name: err.name,
+        message: err.message,
       });
     }
 
     return response.status(500).json({
-      status: "error",
+      statusCode: 500,
+      name: "InternalServerError",
       message: "Internal Server Error",
     });
   }
