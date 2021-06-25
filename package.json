@@ -4,5 +4,19 @@
   "main": "server.js",
   "repository": "https://github.com/pitwo42/nlw-06-nodejs.git",
   "author": "Mozart Pistori Tomazetti",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --ignore-watch node_modules --no-notify src/server.ts",
+    "format": "prettier --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.3.1",
+    "ts-node-dev": "^1.1.6",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.3.4"
+  }
 }
