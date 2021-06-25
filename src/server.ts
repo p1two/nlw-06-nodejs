@@ -2,9 +2,9 @@ import "reflect-metadata";
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import { router } from "./routes";
-
-import "./database"
 import { ApplicationError } from "@utils/errors";
+
+import "./database";
 
 const app = express();
 
