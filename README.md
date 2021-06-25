@@ -4,14 +4,14 @@
 
 ### Register User
 
-- [ ] You can't register users with the same email
-- [ ] You can't register users without email
+- [x] You can't register users with the same email
+- [x] You can't register users without email
 
 ### Register Tag
 
-- [ ] You can't register tag without name
-- [ ] You can't register tags with the same name
-- [ ] You can't register tag if you`re not an admin
+- [x] You can't register tag without name
+- [x] You can't register tags with the same name
+- [x] You can't register tag if you`re not an admin
 
 ### Register Compliments
 

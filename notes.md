@@ -64,3 +64,17 @@ It would be a way to version changes in the database, like a git for the databas
 ### Application Flow
 
 -> Server -> Routes -> Controller -> Service -> Repositories -> BD
+
+## Class-3
+
+```sh
+yarn add express-async-errors
+```
+
+### Middleware
+
+app.use is used to add middlewares
+- express.json: enable json on requests
+- router: add routes
+
+middleware to handle error needs 4 parameters, others need only 3
