@@ -1,3 +1,4 @@
+import { Tag } from "@entities/Tag";
 import { TagsRepositories } from "@repositories/TagsRepositories";
 import { BadRequest } from "@utils/errors";
 import { getCustomRepository } from "typeorm";
@@ -7,7 +8,7 @@ interface ITagRequest {
 }
 
 class CreateTagService {
-  async execute({ name }: ITagRequest) {
+  async execute({ name }: ITagRequest): Promise<Tag> {
     const tagsRepositories = getCustomRepository(TagsRepositories);
 
     if (!name) {

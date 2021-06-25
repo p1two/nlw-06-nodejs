@@ -1,3 +1,4 @@
+import { Compliment } from "@entities/Compliment";
 import { ComplimentsRepositories } from "@repositories/ComplimentsRepositories";
 import { TagsRepositories } from "@repositories/TagsRepositories";
 import { UsersRepositories } from "@repositories/UsersRepositories";
@@ -17,7 +18,7 @@ class CreateComplimentService {
     user_sender,
     user_receiver,
     message,
-  }: IComplimentRequest) {
+  }: IComplimentRequest): Promise<Compliment> {
     const complimentsRepositories = getCustomRepository(
       ComplimentsRepositories
     );

@@ -14,10 +14,16 @@ class BadRequest extends ApplicationError {
   }
 }
 
+class Unauthorized extends ApplicationError {
+  get statusCode(): number {
+    return 401;
+  }
+}
+
 class NotFound extends ApplicationError {
   get statusCode(): number {
     return 404;
   }
 }
 
-export { ApplicationError, BadRequest, NotFound };
+export { ApplicationError, BadRequest, Unauthorized, NotFound };

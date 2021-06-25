@@ -1,3 +1,4 @@
+import { User } from "@entities/User";
 import { UsersRepositories } from "@repositories/UsersRepositories";
 import { BadRequest } from "@utils/errors";
 import { hash } from "bcryptjs";
@@ -11,7 +12,12 @@ interface IUserRequest {
 }
 
 class CreateUserService {
-  async execute({ name, email, admin = false, password }: IUserRequest) {
+  async execute({
+    name,
+    email,
+    admin = false,
+    password,
+  }: IUserRequest): Promise<User> {
     const userRepository = getCustomRepository(UsersRepositories);
 
     if (!email) {

@@ -14,7 +14,7 @@
 
   [ X ] Não é permitido cadastrar mais de uma tag com o mesmo nome
 
-  [ ] Não é permitido cadastro por usuários que não sejam administradores
+  [ X ] Não é permitido cadastro por usuários que não sejam administradores
 
 - Cadastro de Elogio
 
@@ -24,4 +24,17 @@
 
   [ X ] Não é permitido cadastrar elogios com tags inválidas
 
-  [ ] O usuário precisa estar autenticado na aplicação
+  [ X ] O usuário precisa estar autenticado na aplicação
+
+
+## TODO
+
+- [ ] Change database SQLite to MySQL
+- [ ] Deploy (Heroku)
+- [ ] Add Frontend
+- [ ] Send compliment email to user receiver
+- [ ] Refactor to Clean Architecture
+- [ ] Add search tag by name
+- [ ] Add search user by name
+- [ ] Improve logs (sentry)
+- [ ] Add custom error handles
