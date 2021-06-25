@@ -1,7 +1,8 @@
 import "reflect-metadata";
-import express, { NextFunction, Request, Response } from "express";
+import "dotenv/config";
 import "express-async-errors";
-import cors from "cors"
+import express, { NextFunction, Request, Response } from "express";
+import cors from "cors";
 import { router } from "./routes";
 import { ApplicationError } from "@utils/errors";
 
@@ -33,4 +34,4 @@ app.use(
   }
 );
 
-app.listen(3000, () => console.log("Server is running"));
+app.listen(process.env.PORT, () => console.log("Server is running"));

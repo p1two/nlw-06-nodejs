@@ -23,7 +23,7 @@
 
 ## TODO
 
-- [ ] Centralize the Secret used by the JWT
+- [x] Centralize the Secret used by the JWT
 - [ ] Change database SQLite to MySQL
 - [ ] Deploy (Heroku)
 - [ ] Verify email on user create

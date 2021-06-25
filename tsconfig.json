@@ -17,13 +17,13 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "paths": {
+      "@configs/*": ["src/configs/*"],
       "@controllers/*": ["src/controllers/*"],
       "@entities/*": ["src/entities/*"],
       "@middlewares/*": ["src/middlewares/*"],
       "@repositories/*": ["src/repositories/*"],
       "@services/*": ["src/services/*"],
-      "@utils/*": ["src/utils/*"],
-      "@configs/*": ["src/configs/*"]
+      "@utils/*": ["src/utils/*"]
     }
   }
 }
