@@ -92,3 +92,21 @@ yarn typeorm migration:run
 yarn add bcryptjs
 yarn add @types/bcryptjs -D
 ```
+
+## Class-5
+
+```sh
+yarn add class-transformer
+yarn add cors
+yarn add @types/cors -D
+```
+
+### Async/await
+
+Functions that will need to call another function with await need to be declared as async
+
+Functions that return a Promise need to be called with await
+
+### Clean Architecture
+
+One of the rules would be to separate CRUD operations (create, read, update, delete) into different services instead of grouping all operations related to an entity in a single file

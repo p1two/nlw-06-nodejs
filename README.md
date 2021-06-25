@@ -19,6 +19,18 @@
 - [x] You can't register a compliment to yourself
 - [x] You can't register a compliment to an invalid user
 - [x] You can't register a compliment with an invalid tag
-- [ ] You must be logged in to register a compliment
+- [x] You must be logged in to register a compliment
 
 ## TODO
+
+- [ ] Centralize the Secret used by the JWT
+- [ ] Change database SQLite to MySQL
+- [ ] Deploy (Heroku)
+- [ ] Verify email on user create
+- [ ] Add Frontend
+- [ ] Send compliment email to user receiver
+- [ ] Refactor to Clean Architecture
+- [ ] Add search tag by name
+- [ ] Add search user by name
+- [ ] Improve logs (sentry)
+- [ ] Add custom error handles
