@@ -1,4 +1,5 @@
 import { ComplimentsRepositories } from "@repositories/ComplimentsRepositories";
+import { classToPlain } from "class-transformer";
 import { getCustomRepository } from "typeorm";
 
 class ListUserSentComplimentsService {
@@ -14,7 +15,7 @@ class ListUserSentComplimentsService {
       relations: ["userSender", "userReceiver", "tag"],
     });
 
-    return compliments;
+    return classToPlain(compliments);
   }
 }
 
