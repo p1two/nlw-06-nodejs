@@ -6,6 +6,7 @@
 
 - [x] You can't register users with the same email
 - [x] You can't register users without email
+- [x] You can't register users without password
 
 ### Register Tag
 
@@ -15,9 +16,9 @@
 
 ### Register Compliments
 
-- [ ] You can't register a compliment to yourself
-- [ ] You can't register a compliment to an invalid user
-- [ ] You can't register a compliment with an invalid tag
+- [x] You can't register a compliment to yourself
+- [x] You can't register a compliment to an invalid user
+- [x] You can't register a compliment with an invalid tag
 - [ ] You must be logged in to register a compliment
 
 ## TODO

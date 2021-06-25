@@ -74,7 +74,21 @@ yarn add express-async-errors
 ### Middleware
 
 app.use is used to add middlewares
+
 - express.json: enable json on requests
 - router: add routes
 
 middleware to handle error needs 4 parameters, others need only 3
+
+## Class-4
+
+```sh
+yarn add jsonwebtoken
+yarn add @types/jsonwebtoken -D
+
+yarn typeorm migration:create -n AlterUsersAddPassword
+yarn typeorm migration:run
+
+yarn add bcryptjs
+yarn add @types/bcryptjs -D
+```
