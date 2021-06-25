@@ -1,0 +1,8 @@
+{
+  "name": "nlw-values",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/pitwo42/nlw-06-nodejs.git",
+  "author": "Mozart Pistori Tomazetti",
+  "license": "MIT"
+}
