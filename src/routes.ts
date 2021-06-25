@@ -5,6 +5,7 @@ import { CreateUserController } from "@controllers/CreateUserController";
 import { ListTagsController } from "@controllers/ListTagsController";
 import { ListUserReceivedComplimentsController } from "@controllers/ListUserReceivedComplimentsController";
 import { ListUserSentComplimentsController } from "@controllers/ListUserSentComplimentsController";
+import { ListUsersController } from "@controllers/ListUsersController";
 import { ensureAdmin } from "@middlewares/ensureAdmin";
 import { ensureAuthenticated } from "@middlewares/ensureAuthenticated";
 import { Router } from "express";
@@ -20,6 +21,7 @@ const listUserReceivedComplimentsController =
 const listUserSentComplimentsController =
   new ListUserSentComplimentsController();
 const listTagsController = new ListTagsController();
+const listUsersController = new ListUsersController();
 
 router.post("/login", authenticateUserController.handle);
 router.post("/users", createUserController.handle);
@@ -45,5 +47,6 @@ router.get(
   listUserSentComplimentsController.handle
 );
 router.get("/tags", ensureAuthenticated, listTagsController.handle);
+router.get("/users", ensureAuthenticated, listUsersController.handle);
 
 export { router };
