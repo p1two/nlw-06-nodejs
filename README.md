@@ -25,7 +25,7 @@
 
 - [x] Centralize the Secret used by the JWT
 - [x] Change database SQLite to MySQL
-- [ ] Deploy (Heroku)
+- [x] Deploy (Heroku)
 - [ ] Verify email on user create
 - [ ] Add Frontend
 - [ ] Send compliment email to user receiver

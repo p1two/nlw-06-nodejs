@@ -110,3 +110,21 @@ Functions that return a Promise need to be called with await
 ### Clean Architecture
 
 One of the rules would be to separate CRUD operations (create, read, update, delete) into different services instead of grouping all operations related to an entity in a single file
+
+## Heroku
+
+```sh
+sudo snap install --classic heroku
+heroku login
+heroku apps
+heroku git:remote -a your_app_name
+heroku run bash
+npx typeorm migration:show
+npx typeorm migration:run
+```
+
+### Config Vars
+
+TYPEORM_ENTITIES = dist/entities/*.js
+
+TYPEORM_MIGRATIONS = dist/database/migrations/*.js
