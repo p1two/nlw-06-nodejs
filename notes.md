@@ -44,7 +44,7 @@ yarn typeorm migration:revert
 yarn add uuid
 yarn add @types/uuid -D
 
-yarn typeorm entity:create -n User
+yarn typeorm entity:create -n User -d src/user/entity
 ```
 
 ### Types of Parameters

@@ -2,4 +2,5 @@
 node_modules
 dist
 .env
+ormconfig.env
 src/database/database.sqlite

@@ -8,7 +8,8 @@ export class CreateTags1624463880890 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "uuid",
+            type: "varchar",
+            generationStrategy: "uuid",
             isPrimary: true,
           },
           {

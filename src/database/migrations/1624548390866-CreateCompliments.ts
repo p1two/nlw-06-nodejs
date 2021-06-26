@@ -8,20 +8,24 @@ export class CreateCompliments1624548390866 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "uuid",
+            type: "varchar",
+            generationStrategy: "uuid",
             isPrimary: true,
           },
           {
             name: "user_sender",
-            type: "uuid",
+            type: "varchar",
+            generationStrategy: "uuid",
           },
           {
             name: "user_receiver",
-            type: "uuid",
+            type: "varchar",
+            generationStrategy: "uuid",
           },
           {
             name: "tag_id",
-            type: "uuid",
+            type: "varchar",
+            generationStrategy: "uuid",
           },
           {
             name: "message",
@@ -39,24 +43,18 @@ export class CreateCompliments1624548390866 implements MigrationInterface {
             referencedTableName: "users",
             referencedColumnNames: ["id"],
             columnNames: ["user_sender"],
-            onDelete: "SET NULL",
-            onUpdate: "SET NULL",
           },
           {
             name: "FKUserReceiverCompliments",
             referencedTableName: "users",
             referencedColumnNames: ["id"],
             columnNames: ["user_receiver"],
-            onDelete: "SET NULL",
-            onUpdate: "SET NULL",
           },
           {
             name: "FKTagsCompliments",
             referencedTableName: "tags",
             referencedColumnNames: ["id"],
             columnNames: ["tag_id"],
-            onDelete: "SET NULL",
-            onUpdate: "SET NULL",
           },
         ],
       })
